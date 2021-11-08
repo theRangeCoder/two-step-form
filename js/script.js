@@ -66,6 +66,15 @@ const setError = (element, message) => {
     inputControl.classList.remove('success');
 }
 
+// Create a function to remove the input value if it is a valid input
+const setError = (element) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+}
+
 const validateInputs = () => {
     const first_name_value = first_name.value.trim();
     const last_name_value = last_name.value.trim();
