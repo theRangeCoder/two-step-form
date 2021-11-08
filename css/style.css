@@ -1,0 +1,37 @@
+/* Display none of the steps by default */
+.step {
+    display: none;
+}
+
+/* Display only the active step */
+.step.active {
+    display: block;
+}
+
+#nextBtn {
+    float: right;
+}
+
+#previousBtn {
+    float: left;
+}
+
+#submitBtn {
+    float: right;
+}
+
+/* Input validation */
+/* Remove the default border of input field */
+/* 
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: lightgreen;
+}
+
+.input-control.error input {
+    border-color: red;
+} 
+*/
